@@ -3,28 +3,31 @@
   src: local("BebasNeue"), url(../../fonts/BebasNeue-Regular.ttf) format('truetype');
 } 
 
-*{
-  margin: 0 auto;
-  font-family: "BebasNeue";
-  letter-spacing: 0.8px;
-}
 
+*{
+  margin: 0;
+}
 .containerLogin{
   display: flex;
   flex-direction: row;
   height: 100vh;
+
 }
 
 .containerDescricao{
   width: 60%;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  /*background-image: url("../../../public/backgroundLogin.png");*/
+  background-size: 100%;
   background-color: #FA8900;
 }
 
 .containerFormLogin{
   display:flex;
   flex-direction: column;
+  align-items: center;
   background-color: #1B2538;
   width: 40%;
 }

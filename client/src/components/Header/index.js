@@ -1,0 +1,39 @@
+
+import React from 'react';
+import { Link } from 'react-router-dom'
+import './header.css';
+import About from '../../view/about';
+
+
+
+function Header() {
+    return (
+        <div className='navBar'>
+            <div className='containerLogoHeader'>
+                <Link  to="/home">        
+                    <img src="./logo_02.png" className="imgLogoHeader"  alt="logo"/>
+                </Link>
+            </div>
+            <div className='containerLinksHeader'>
+                <div className='containerLink'>
+                    <Link className='linkHeader' to="/produtos">Produtos</Link>
+                </div>
+                <div className='containerLink'>
+                    <Link className='linkHeader' to="/vendas">Vendas</Link>
+                </div>
+                <div className='containerLink'>
+                    <Link className='linkHeader' to="/about">Sobre nós</Link>
+                </div>
+                <div className='containerLink'>
+                    <Link className='linkHeader' to="/contato">Contato</Link>
+                </div>
+                <div className='containerLink'>
+                    <Link className='linkHeader'>Sair</Link>                    
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+export default Header

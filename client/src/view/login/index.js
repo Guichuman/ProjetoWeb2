@@ -13,7 +13,7 @@ function Login() {
       <div  className="containerDescricao">
         <img src="./logo_02.png" className="imgLogo" style={{marginTop: 40}} alt="logo"/>
         <div className="descricao">
-          <p style={{fontSize: 30}} className="paragrafoDescricao">Sistema com o intuito de controlar o estoque de roupas e afins, o usuário administrador poderá cadastrar novos produtos no sistema e realizar vendas, já o usuário funcionário somente poderá realizar vendas.</p>
+          <p style={{fontSize: 30}} className="paragrafoDescricao">Sistema de controle e estoque de produtos em geral</p>
         </div>
       </div>
       <div  className="containerFormLogin">
@@ -26,7 +26,7 @@ function Login() {
           </div>
         </form>
         <div className="containerBtns">
-            <button className="btnCadastrar btn">Cadastrar</button>
+            <Link to="/cadastroUsuario" className="btnCadastrar btn">Cadastrar</Link>
             <div style={{marginLeft: 15, marginRight: 15}}></div>
             <button className="btnEsqueci btn">Esqueci minha senha</button>
         </div>
